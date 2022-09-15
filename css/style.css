@@ -1,1 +1,18 @@
-div{background:#999;height:200px;width:200px}div a{color:pink}
+p {
+  color: white;
+}
+
+button {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+div {
+  background: #999;
+  height: 200px;
+  width: 200px;
+}
+
+div a {
+  color: pink;
+}
