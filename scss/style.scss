@@ -1,13 +1,33 @@
-@import 'color';
-@import 'button';
+$cor-primaria: #e57;
+$font-principal: sans-serif;
+$gutter: 20px;
 
-$preto: #999;
+section {
+	max-width: 600px;
+	margin: 0 auto;
+}
 
-div {
-    background: $preto;
-    height: 200px;
-    width: 200px;
-    a {
-        color: pink;
-    }
+h1 {
+	color: $cor-primaria;
+	font-family: $font-principal;
+	margin-bottom: $gutter;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.4;
+	max-width: 400px;
+}
+
+a {
+	display: block;
+	max-width: 120px;
+	padding: 10px;
+	border-radius: 4px;
+	text-align: center;
+	background: $cor-primaria;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $font-principal;
 }

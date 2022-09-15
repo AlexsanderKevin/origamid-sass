@@ -5,8 +5,8 @@
 		"../scss/style.scss"
 	],
 	"sourcesContent": [
-		"$preto: #999;\r\n\r\ndiv {\r\n    background: $preto;\r\n    a {\r\n        color: pink;\r\n    }\r\n}\r\n"
+		"$cor-primaria: #e57;\n$font-principal: sans-serif;\n$gutter: 20px;\n$cor-primaria: purple;\n\nsection {\n\tmax-width: 600px;\n\tmargin: 0 auto;\n}\n\nh1 {\n\tcolor: $cor-primaria;\n\tfont-family: $font-principal;\n\tmargin-bottom: $gutter;\n}\n\np {\n\tfont-size: 1.2em;\n\tline-height: 1.4;\n\tmax-width: 400px;\n}\n\na {\n\tdisplay: block;\n\tmax-width: 120px;\n\tpadding: 10px;\n\tborder-radius: 4px;\n\ttext-align: center;\n\tbackground: $cor-primaria;\n\tcolor: white;\n\ttext-decoration: none;\n\ttext-transform: uppercase;\n\tfont-family: $font-principal;\n}"
 	],
 	"names": [],
-	"mappings": ";AAEA,AAAA,GAAG,CAAC;EACA,UAAU,EAHN,IAAI,GAOX;;EALD,AAEI,GAFD,CAEC,CAAC,CAAC;IACE,KAAK,EAAE,IAAI,GACd"
+	"mappings": ";AAKA,AAAA,OAAO,CAAC;EACP,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;CACd;;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,EARS,MAAM;EASpB,WAAW,EAXK,UAAU;EAY1B,aAAa,EAXL,IAAI;CAYZ;;;AAED,AAAA,CAAC,CAAC;EACD,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;CAChB;;;AAED,AAAA,CAAC,CAAC;EACD,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,MAAM;EAClB,UAAU,EAzBI,MAAM;EA0BpB,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;EACrB,cAAc,EAAE,SAAS;EACzB,WAAW,EA/BK,UAAU;CAgC1B"
 }

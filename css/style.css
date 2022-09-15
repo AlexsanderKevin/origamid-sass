@@ -1,18 +1,35 @@
+/* line 6, D:/Cursos/Origamid/sass/scss/style.scss */
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* line 11, D:/Cursos/Origamid/sass/scss/style.scss */
+h1 {
+  color: purple;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+/* line 17, D:/Cursos/Origamid/sass/scss/style.scss */
 p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+/* line 23, D:/Cursos/Origamid/sass/scss/style.scss */
+a {
+  display: block;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background: purple;
   color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
-button {
-  background-color: aquamarine;
-  border-radius: 5px;
-}
-
-div {
-  background: #999;
-  height: 200px;
-  width: 200px;
-}
-
-div a {
-  color: pink;
-}
+/*# sourceMappingURL=style.css.map */
