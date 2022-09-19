@@ -1,35 +1,71 @@
-/* line 6, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 5, D:/Cursos/Origamid/sass/scss/style.scss */
 section {
   max-width: 600px;
   margin: 0 auto;
 }
 
 /* line 11, D:/Cursos/Origamid/sass/scss/style.scss */
-h1 {
-  color: purple;
+.modal a {
+  display: block;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #e57;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 26, D:/Cursos/Origamid/sass/scss/style.scss */
+.modal h1 {
+  color: #e57;
   font-family: sans-serif;
   margin-bottom: 20px;
 }
 
-/* line 17, D:/Cursos/Origamid/sass/scss/style.scss */
-p {
+/* line 32, D:/Cursos/Origamid/sass/scss/style.scss */
+.modal p {
   font-size: 1.2em;
   line-height: 1.4;
   max-width: 400px;
 }
 
-/* line 23, D:/Cursos/Origamid/sass/scss/style.scss */
-a {
-  display: block;
-  max-width: 120px;
-  padding: 10px;
-  border-radius: 4px;
+/* line 39, D:/Cursos/Origamid/sass/scss/style.scss */
+ul {
   text-align: center;
-  background: purple;
-  color: white;
+}
+
+/* line 41, D:/Cursos/Origamid/sass/scss/style.scss */
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 44, D:/Cursos/Origamid/sass/scss/style.scss */
+ul li a {
+  display: block;
+  padding: 20px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: sans-serif;
+  background-color: #e57;
+  color: white;
+  border-radius: 5px;
+}
+
+/* line 51, D:/Cursos/Origamid/sass/scss/style.scss */
+.active ul li a {
+  background-color: purple;
+}
+
+/* line 54, D:/Cursos/Origamid/sass/scss/style.scss */
+ul li a:hover {
+  opacity: .5;
+}
+
+/* line 57, D:/Cursos/Origamid/sass/scss/style.scss */
+ul li a .active {
+  color: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */
