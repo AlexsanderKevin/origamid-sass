@@ -2,6 +2,31 @@ $cor-primaria: #e57;
 $font-principal: sans-serif;
 $gutter: 20px;
 
+@mixin title {
+	font-weight: bold;
+	font-family: monospace;
+}
+
+@mixin text-large {
+	font-size: 4em;
+	line-height: 1;
+}
+
+@mixin title-large {
+	@include title;
+	@include text-large;
+}
+
+@mixin separador($color) {
+	&::after {
+		content: '';
+		display: block;
+		width: 100px;
+		height: 4px;
+		background: $color;
+	}
+}
+
 section {
 	max-width: 600px;
 	margin: 0 auto;
@@ -25,14 +50,16 @@ section {
 	
 	h1 {
 		color: $cor-primaria;
-		font-family: $font-principal;
 		margin-bottom: $gutter;
+		@include title-large;
+		@include separador($cor-primaria)
 	}
 	
 	p {
 		font-size: 1.2em;
 		line-height: 1.4;
 		max-width: 400px;
+		@include separador(rgb(63, 63, 63))
 	}
 }
 
