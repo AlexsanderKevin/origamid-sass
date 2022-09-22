@@ -42,6 +42,10 @@ section {
 	margin: 0 auto;
 }
 
+%erro {
+	color: red !important;
+}
+
 .modal {
 	a {
 		display: block;
@@ -62,16 +66,16 @@ section {
 		color: $cor-primaria;
 		margin-bottom: $gutter;
 		@include title-large();
-		@include mobile {
-			color: purple;
-		}
+		@include separador($cor-primaria);
+		@extend %erro;
 	}
 	
 	p {
 		font-size: 1.2em;
 		line-height: 1.4;
 		max-width: 400px;
-		@include separador(rgb(63, 63, 63), 50px)
+		@include separador(rgb(63, 63, 63), 50px);
+		@extend %erro;
 	}
 }
 
