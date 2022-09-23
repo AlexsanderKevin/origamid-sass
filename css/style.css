@@ -4,7 +4,12 @@ section {
   margin: 0 auto;
 }
 
-/* line 46, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 45, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+.modal p {
+  color: red !important;
+}
+
+/* line 50, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 .modal a {
   display: block;
   max-width: 120px;
@@ -18,7 +23,7 @@ section {
   text-align: center;
 }
 
-/* line 61, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 65, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 .modal h1 {
   color: #e57;
   margin-bottom: 20px;
@@ -29,7 +34,7 @@ section {
   font-size: 36px;
 }
 
-/* line 68, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 72, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 .modal p {
   font-size: 3.2em;
   line-height: 1.4;
@@ -45,18 +50,18 @@ section {
   background: #3f3f3f;
 }
 
-/* line 76, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 81, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul {
   text-align: center;
 }
 
-/* line 78, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 83, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li {
   display: inline-block;
   list-style: none;
 }
 
-/* line 81, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 86, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a {
   display: block;
   padding: 20px;
@@ -66,17 +71,17 @@ ul li a {
   border-radius: 5px;
 }
 
-/* line 88, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 93, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 .active ul li a {
   background-color: purple;
 }
 
-/* line 91, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 96, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a:hover {
   opacity: .5;
 }
 
-/* line 94, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+/* line 99, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a .active {
   color: aquamarine;
 }
