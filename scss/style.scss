@@ -49,6 +49,19 @@ $cor-texto-primario: purple;
 	$cor-texto-primario: #333;
 }
 
+@mixin type( $size: 16 ) {
+	font-family: monospace;
+	@if $size == 16 {
+		font-size: 1em;
+
+	} @else if $size == 18 {
+		font-size: 1.25em;
+
+	} @else if $size == 24 {
+		font-size: 1.5em;
+	}
+}
+
 body {
 	background-color: $fundo-primario;
 }
@@ -57,6 +70,7 @@ p {
 	line-height: 1.4;
 	max-width: 400px;
 	color: $cor-texto-primario;
+	@include type(24)
 }
 
 section {
@@ -105,7 +119,7 @@ ul {
 				opacity: .5;
 			}
 			& .active{
-				color: aquamarine;
+				font-weight: bold;
 			}
 		}
 	}
