@@ -1,66 +1,6 @@
-$cor-primaria: #e57;
-$font-principal: sans-serif;
-$gutter: 20px;
-
-@mixin title {
-	font-weight: bold;
-	font-family: monospace;
-}
-
-@mixin text-large {
-	font-size: 4em;
-	line-height: 1;
-}
-
-@mixin title-large {
-	@include title;
-	@include text-large;
-}
-
-@mixin separador($color: black, $largura: 100px) {
-	&::after {
-		content: '';
-		display: block;
-		width: $largura;
-		height: 4px;
-		background: $color;
-	}
-}
-
-@mixin box-shadow($shadow...) {
-	box-shadow: $shadow;
-}
-
-@mixin mobile {
-	@media (max-width: 600px) {
-		@content;
-	}
-}
-
-$tema: dark;
-$fundo-primario: yellow;
-$cor-texto-primario: purple;
-
-@if $tema == dark {
-	$fundo-primario: #333;
-	$cor-texto-primario: #ccc;
-} @else if $tema == light {
-	$fundo-primario: white;
-	$cor-texto-primario: #333;
-}
-
-@mixin type( $size: 16 ) {
-	font-family: monospace;
-	@if $size == 16 {
-		font-size: 1em;
-
-	} @else if $size == 18 {
-		font-size: 1.25em;
-
-	} @else if $size == 24 {
-		font-size: 1.5em;
-	}
-}
+@import "variaveis";
+@import "mixins";
+@import "condicionais";
 
 body {
 	background-color: $fundo-primario;
