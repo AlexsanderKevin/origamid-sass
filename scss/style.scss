@@ -37,45 +37,53 @@ $gutter: 20px;
 	}
 }
 
+$tema: dark;
+$fundo-primario: yellow;
+$cor-texto-primario: purple;
+
+@if $tema == dark {
+	$fundo-primario: #333;
+	$cor-texto-primario: #ccc;
+} @else if $tema == light {
+	$fundo-primario: white;
+	$cor-texto-primario: #333;
+}
+
+body {
+	background-color: $fundo-primario;
+}
+
+p {
+	line-height: 1.4;
+	max-width: 400px;
+	color: $cor-texto-primario;
+}
+
 section {
 	max-width: 600px;
 	margin: 0 auto;
 }
 
-%erro {
-	color: red !important;
+a {
+	display: block;
+	max-width: 120px;
+	padding: 10px;
+	border-radius: 4px;
+	background: $cor-primaria;
+	color: white;
+	font-family: $font-principal;
+	text: {
+		decoration: none;
+		transform: uppercase;
+		align: center;
+	}
 }
 
-.modal {
-	a {
-		display: block;
-		max-width: 120px;
-		padding: 10px;
-		border-radius: 4px;
-		background: $cor-primaria;
-		color: white;
-		font-family: $font-principal;
-		text: {
-			decoration: none;
-			transform: uppercase;
-			align: center;
-		}
-	}
-	
-	h1 {
-		color: $cor-primaria;
-		margin-bottom: $gutter;
-		@include title-large();
-		font-size: 16px + 20;
-	}
-	
-	p {
-		font-size: 1.2em + 2;
-		line-height: 1.4;
-		max-width: 400px;
-		@include separador(rgb(63, 63, 63), 50px);
-		@extend %erro;
-	}
+h1 {
+	color: $cor-primaria;
+	margin-bottom: $gutter;
+	@include title-large();
+	@include separador($cor-primaria);
 }
 
 ul {
