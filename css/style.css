@@ -1,24 +1,25 @@
-/* line 65, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 6, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 body {
   background-color: #333;
 }
 
-/* line 69, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 10, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 p {
   line-height: 1.4;
   max-width: 400px;
   color: #ccc;
   font-family: monospace;
   font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-/* line 76, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 18, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 section {
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* line 81, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 23, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 a {
   display: block;
   max-width: 120px;
@@ -32,7 +33,12 @@ a {
   text-align: center;
 }
 
-/* line 96, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 36, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
+a:hover {
+  background: rgba(238, 85, 119, 0.9);
+}
+
+/* line 41, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 h1 {
   color: #e57;
   margin-bottom: 20px;
@@ -42,7 +48,7 @@ h1 {
   line-height: 1;
 }
 
-/* line 21, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 17, ../../../../../cursos/origamid/sass-basico/scss/_mixins.scss */
 h1::after {
   content: '';
   display: block;
@@ -51,18 +57,18 @@ h1::after {
   background: #e57;
 }
 
-/* line 103, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 48, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul {
   text-align: center;
 }
 
-/* line 105, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 50, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li {
   display: inline-block;
   list-style: none;
 }
 
-/* line 108, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 53, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a {
   display: block;
   padding: 20px;
@@ -72,17 +78,17 @@ ul li a {
   border-radius: 5px;
 }
 
-/* line 115, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 60, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 .active ul li a {
   background-color: purple;
 }
 
-/* line 118, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 63, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a:hover {
   opacity: .5;
 }
 
-/* line 121, D:/Cursos/Origamid/sass/scss/style.scss */
+/* line 66, ../../../../../cursos/origamid/sass-basico/scss/style.scss */
 ul li a .active {
   font-weight: bold;
 }
