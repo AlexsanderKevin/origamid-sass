@@ -1,7 +1,6 @@
 @if $tema == dark {
 	$fundo-primario: #333;
 	$cor-texto-primario: #ccc;
-
 } @else if $tema == light {
 	$fundo-primario: white;
 	$cor-texto-primario: #333;

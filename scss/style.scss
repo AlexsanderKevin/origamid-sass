@@ -1,6 +1,8 @@
-@import "variaveis";
-@import "mixins";
-@import "condicionais";
+@import 'mixins';
+@import 'variaveis';
+@import 'condicionais';
+@import 'funcoes';
+@import 'loops';
 
 body {
 	background-color: $fundo-primario;
@@ -10,7 +12,8 @@ p {
 	line-height: 1.4;
 	max-width: 400px;
 	color: $cor-texto-primario;
-	@include type(24)
+	@include type(24);
+	font-size: convertToEm(24);
 }
 
 section {
@@ -30,6 +33,9 @@ a {
 		decoration: none;
 		transform: uppercase;
 		align: center;
+	}
+	&:hover {
+		background: transparentize($cor-primaria, .1);
 	}
 }
 
