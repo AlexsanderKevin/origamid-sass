@@ -1,0 +1,31 @@
+@for $i from 1 through 6 {
+    .item-#{$i} {
+        width: 100px
+    }
+}
+
+$container-width: 950;
+$colunas: 12;
+$gutter: 20;
+
+@for $i from 1 through $colunas {
+    $width: $i / $colunas * 100;
+    .grid-percent-#{$i} {
+        width: $width + '%';
+    }
+}
+
+@for $i from 1 through $colunas {
+    $width: $container-width / $colunas * $i - $gutter;
+    .grid-#{$i} {
+        width: $width + px;
+    }
+}
+
+$redes: facebook twitter pinterest instagram;
+
+@each $rede in $redes {
+    .#{$rede}-icon {
+        background: url('../img/#{$rede}.png');
+    }
+}
